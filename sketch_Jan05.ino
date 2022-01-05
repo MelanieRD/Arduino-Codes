@@ -33,7 +33,7 @@ void loop() {
 
       Serial.print("La temperatura en celcium es: ");
       Serial.println(temperature);
-
+    Serial.println("  ");
       
 if(temperature < baselineTemp+2){
 
@@ -53,5 +53,5 @@ if(temperature < baselineTemp+2){
          digitalWrite(i, HIGH); }
       }
 
-  delay(1);
+  delay(5000);
 }
